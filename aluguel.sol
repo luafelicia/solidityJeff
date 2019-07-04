@@ -50,14 +50,11 @@ contract Aluguel {
         return locatario;
     } 
     
-    
     function ajusteAluguel(uint256 igpm) public somenteLocador returns (uint256) {
         valorAluguel = valorAluguel+((valorAluguel*igpm)/100);
         emit aluguelReajustado (valorAluguel);
         return valorAluguel;
         
-        
     }
-    
-    
+   
 }
