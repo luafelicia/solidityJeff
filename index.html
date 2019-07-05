@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Imobiliária da Lua 🌜</h1>
+
+            <p>
+                <a class="btn btn-primary btn-lg" onclick="getLocatario()">Locatário</a>
+                <h6 id="locatario"></h6>
+            </p>
+            <p>
+                <a class="btn btn-primary btn-lg" onclick="getLocador()">Locador</a>
+                <h6 id="locador"></h6>
+            </p>
+            <p>
+                <a class="btn btn-primary btn-lg" onclick="getValorAluguel()">Valor do Aluguel</a>
+                <h6 id="valorAluguel"></h6>
+            </p>
+            <p>
+                <h2> Reajustar o aluguel</h2>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="ajusteAluguel">
+                    <h6 id="ajusteAluguel"></h6>
+                </div>
+                <a class="btn btn-primary btn-lg" onclick="ajusteAluguel()">ok</a>
+                <h6 id="aluguelReajustado"></h6>
+
+            </p>
+        </div>
+    </div>
+
+
+
+    <script src="accounts.json"></script>
+    <!--this esposes the library as a global variable: ethers -->
+    <script src="https://cdn.ethers.io/scripts/ethers-v4.min.js" charset="utf-8" type="text/javascript"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="abi.json"></script>
+    <script src="smartContract.js"></script>
+</body>
+
+</html>
