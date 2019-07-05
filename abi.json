@@ -1,0 +1,159 @@
+const abi = [{
+        "constant": false,
+        "inputs": [{
+            "name": "igpm",
+            "type": "uint256"
+        }],
+        "name": "ajusteAluguel",
+        "outputs": [{
+            "name": "",
+            "type": "uint256"
+        }],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": false,
+        "inputs": [],
+        "name": "pagamentoAluguel",
+        "outputs": [{
+            "name": "",
+            "type": "bool"
+        }],
+        "payable": true,
+        "stateMutability": "payable",
+        "type": "function"
+    },
+    {
+        "inputs": [{
+                "name": "_locador",
+                "type": "address"
+            },
+            {
+                "name": "_locatario",
+                "type": "address"
+            },
+            {
+                "name": "_valorAluguel",
+                "type": "uint256"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+    },
+    {
+        "anonymous": false,
+        "inputs": [{
+            "indexed": false,
+            "name": "valorAluguel",
+            "type": "uint256"
+        }],
+        "name": "aluguelReajustado",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [{
+            "indexed": false,
+            "name": "valorAluguel",
+            "type": "uint256"
+        }],
+        "name": "pagamentoEfetuado",
+        "type": "event"
+    },
+    {
+        "constant": true,
+        "inputs": [],
+        "name": "apartamento",
+        "outputs": [{
+                "name": "cidade",
+                "type": "string"
+            },
+            {
+                "name": "numeroQuartos",
+                "type": "uint256"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [{
+            "name": "",
+            "type": "uint256"
+        }],
+        "name": "arquivo",
+        "outputs": [{
+                "name": "data",
+                "type": "uint256"
+            },
+            {
+                "name": "valorRecebido",
+                "type": "uint256"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [],
+        "name": "getLocatario",
+        "outputs": [{
+            "name": "",
+            "type": "address"
+        }],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [],
+        "name": "locador",
+        "outputs": [{
+            "name": "",
+            "type": "address"
+        }],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [{
+            "name": "",
+            "type": "uint256"
+        }],
+        "name": "pagamentos",
+        "outputs": [{
+                "name": "data",
+                "type": "uint256"
+            },
+            {
+                "name": "valorRecebido",
+                "type": "uint256"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [],
+        "name": "valorAluguel",
+        "outputs": [{
+            "name": "",
+            "type": "uint256"
+        }],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    }
+];
